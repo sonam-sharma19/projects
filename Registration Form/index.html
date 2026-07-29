@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag Elemets</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> Customer Registation</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="" id="" minlength="2" maxlength="10" placeholder="Enter name">
+            </div>
+
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Enter email">
+            </div>
+
+
+            <div>
+                <label for="Password">Password</label>
+                <input type="password" name="password" placeholder="Enter password">
+            </div>
+
+
+            <input type="file" name="file">
+
+
+            <div>
+                <label for="birthday">Select DOB:</label>
+                <input type="date" name="birthday" id="" >
+            </div>
+
+
+            <div>
+                <label for="time">Local time</label>
+                <input type="time" name="time" id="">
+            </div>
+
+
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="" value="male">
+                <label for="gender">Male:</label>
+                <input type="radio" name="gender" id="" value="female">
+                <label for="gender">Female:</label>
+                <input type="radio" name="gender" id="" value="other">
+                <label for="other">Other</label>
+            </div>
+
+
+            <div>
+                <label for="Country">Country:</label>
+                <select name="Country">
+                <option value="0">Select Country</option>
+                <option value="1">India</option>
+                <option value="2">US</option>
+                <option value="3">England</option>
+                <option value="4">Germany</option>
+                </select>
+            </div>
+
+
+            <div></div>
+                <label for="message">Message</label>
+                <textarea name="message" placeholder="Enter info..." cols="20" rows="5"></textarea>
+            </div>
+
+
+            <div>
+                <input for="checkbox" name="newsletter" id="">
+                <label for="newsletter">Are you okay bacccha?</label>
+            </div>
+
+
+            <div>
+                <label type="range">Select range</label>
+                <input type="range" name="range" value="50">
+            </div>
+
+
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
