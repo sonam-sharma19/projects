@@ -1,6 +1,6 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color:#f0f2f5 ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:#1e173a ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +9,10 @@ body {
 }
 
 .card{
-    background-color: white;
+    background-color: rgb(160, 157, 213);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
     text-align: center;
     width: 300px;
 }
@@ -30,5 +30,18 @@ img {
 }
 
 .socials a:hover {
-    color: #007bff;
+    color: #0077b5; /* or any accent color */
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.socials a {
+    margin: 0 12px;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
 }
