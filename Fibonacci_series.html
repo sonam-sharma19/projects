@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci series</title>
+    <script>
+        function fib(){
+            let result = document.getElementById("result");
+            result.innerHTML="";
+            let limit = Number(document.getElementById("num").value)
+            var x=0;
+            var y=1;
+            var z;
+            var i = 1;
+            while (i <= limit){
+                result.innerHTML +=`${x}\n`;
+                z = x+y;
+                x = y;
+                y = z;
+                i = i+1;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>javascript program to print Fibonacci series</h1>
+    <br>
+    <label for="num">Enter the limit </label>
+    <input type="number" id="num">
+    <br><br>
+    <button onclick="fib()">Fibonacci series</button>
+    <br><br>
+    <div id="result"></div>
+</body>
+</html>
+
